@@ -35,7 +35,7 @@ const Header: React.FC = () => {
 
           <div className="flex items-center space-x-10">
             <LanguageToggler />
-            <button className="bg-[#2374EE] text-white font-montserrat font-medium text-sm px-4 py-2 rounded-md hover:bg-[#1b5cbf] transition-colors duration-200">
+            <button className="bg-[#2374EE] text-white font-montserrat font-medium text-sm px-6 py-2 rounded-3xl hover:bg-[#1b5cbf] transition-colors duration-200">
               {t('login')}
             </button>
           </div>

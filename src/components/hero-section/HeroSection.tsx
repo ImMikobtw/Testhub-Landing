@@ -1,11 +1,27 @@
 import React from 'react';
 import { useLanguage } from '../language-toggler/context/LanguageContext';
+import girlImage from './assets/girl.png'; // Путь к изображению девушки
+import nu from './assets/NU.png';
+import kbtu from './assets/KBTU.png';
+import kazuu from './assets/KAZUU.png';
+import kimep from './assets/KIMEP.png';
+import narxoz from './assets/NARXOZ.png';
+import sdu from './assets/SDU.png';
 
 const HeroSection: React.FC = () => {
   const { t } = useLanguage();
 
+  const logos = [
+    { src: nu, alt: 'NU', position: 'top-10 left-8' },
+    { src: kbtu, alt: 'KBTU', position: 'top-12 right-8' },
+    { src: kazuu, alt: 'KAZUU', position: 'bottom-10 left-12' },
+    { src: kimep, alt: 'KIMEP', position: 'bottom-12 right-12' },
+    { src: narxoz, alt: 'NARXOZ', position: 'top-1/4 left-1/4' },
+    { src: sdu, alt: 'SDU', position: 'bottom-1/4 right-1/4' },
+  ];
+
   return (
-    <section className="py-12 md:py-20">
+    <section className="py-12 md:pt-20 md:pb-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#ABCFE0] to-[#DDF3FE] rounded-3xl">
         <div className="flex flex-col md:flex-row items-center py-8 ml-20">
           <div className="md:w-1/2 mb-8 md:mb-0">
@@ -17,7 +33,6 @@ const HeroSection: React.FC = () => {
             </p>
             <div className="flex space-x-4">
               <a
-
                 href="#universities"
                 className="bg-[#2374EE] text-white font-montserrat font-medium text-sm px-6 py-3 rounded-2xl hover:bg-[#1b5cbf] transition-colors duration-200"
               >
@@ -32,12 +47,20 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="md:w-1/2 flex justify-center">
-            <div className="w-full h-64 md:h-96 bg-gray-200 flex items-center justify-center rounded-md">
-              <span className="text-gray-500 font-montserrat">
-                Placeholder for girl and university logos
-              </span>
-            </div>
+          <div className="md:w-1/2 flex justify-center relative h-64 md:h-96">
+            {logos.map((logo, index) => (
+              <img
+                key={logo.alt}
+                src={logo.src}
+                alt={logo.alt}
+                className={`absolute w-12 h-12 md:w-16 md:h-16 rounded-full object-contain animate-bounce-slow ${logo.position}`}
+              />
+            ))}
+            <img
+              src={girlImage}
+              alt="Girl"
+              className="absolute w-40 h-40 md:w-112 md:h-112 object-contain z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
           </div>
         </div>
       </div>
