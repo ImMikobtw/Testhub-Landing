@@ -1,6 +1,8 @@
 import React from 'react';
 import { useLanguage } from '../language-toggler/context/LanguageContext';
-import girlImage from './assets/girl.png'; // Путь к изображению девушки
+/** @type {import('tailwindcss').Config} */
+
+import girlImage from './assets/girl.png';
 import nu from './assets/NU.png';
 import kbtu from './assets/KBTU.png';
 import kazuu from './assets/KAZUU.png';
@@ -12,12 +14,12 @@ const HeroSection: React.FC = () => {
   const { t } = useLanguage();
 
   const logos = [
-    { src: nu, alt: 'NU', position: 'top-10 left-8' },
-    { src: kbtu, alt: 'KBTU', position: 'top-12 right-8' },
-    { src: kazuu, alt: 'KAZUU', position: 'bottom-10 left-12' },
-    { src: kimep, alt: 'KIMEP', position: 'bottom-12 right-12' },
-    { src: narxoz, alt: 'NARXOZ', position: 'top-1/4 left-1/4' },
-    { src: sdu, alt: 'SDU', position: 'bottom-1/4 right-1/4' },
+    { src: nu, alt: 'NU', position: 'top-10 left-8', animation: 'animate-bounce' },
+    { src: kbtu, alt: 'KBTU', position: 'top-6 right-5', animation: 'animate-bounce' },
+    { src: kazuu, alt: 'KAZUU', position: 'bottom-10 left-8', animation: 'animate-bounce 5s' },
+    { src: kimep, alt: 'KIMEP', position: 'bottom-12 right-8', animation: 'animate-bounce' },
+    { src: narxoz, alt: 'NARXOZ', position: 'top-1/4 left-1/4', animation: 'animate-bounce' },
+    { src: sdu, alt: 'SDU', position: 'bottom-2/4 right-1/4', animation: 'animate-bounce' },
   ];
 
   return (
@@ -40,7 +42,7 @@ const HeroSection: React.FC = () => {
               </a>
               <a
                 href="#login"
-                className="bg-white text-[#2374EE] font-montserrat font-medium text-sm px-6 py-3 rounded-2xl border border-[#2374EE] hover:bg-gray-100 transition-colors duration-200"
+                className="bg-white text-[#2374EE] font-montserrat font-medium text-sm px-6 py-3 rounded-2xl border border-[#2374EE] hover:bg-gray-200 transition-colors duration-200"
               >
                 {t('login')}
               </a>
@@ -48,12 +50,12 @@ const HeroSection: React.FC = () => {
           </div>
 
           <div className="md:w-1/2 flex justify-center relative h-64 md:h-96">
-            {logos.map((logo, index) => (
+            {logos.map((logo) => (
               <img
                 key={logo.alt}
                 src={logo.src}
                 alt={logo.alt}
-                className={`absolute w-12 h-12 md:w-16 md:h-16 rounded-full object-contain animate-bounce-slow ${logo.position}`}
+                className={`absolute w-14 h-14 md:w-25 md:h-25 rounded-full object-contain ${logo.animation} ${logo.position}`}
               />
             ))}
             <img

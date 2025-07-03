@@ -1,6 +1,7 @@
 import Header from './widgets/Header';
 import Footer from './widgets/Footer';
 import HeroSection from './components/hero-section/HeroSection';
+import WhatIsTesthubSection from './components/desc-section/WhatIsTesthubSection';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <main className="flex-grow">
         <HeroSection />
+        <WhatIsTesthubSection />
       </main>
       <Footer />
     </div>

@@ -11,6 +11,12 @@ export interface Translation {
     hero_title: string;
     hero_subtitle: string;
     hero_find_university: string;
+    card_study_rankings: string;
+    card_find_specialty: string;
+    card_take_tests: string;
+    card_learn_grants: string;
+    card_all_in_one: string;
+    subtitle: string;
 }
 
 export interface Translations {
@@ -34,6 +40,12 @@ export const translations: Translations = {
     hero_subtitle:
       'Вся информация о вузах Казахстана — в одном месте: рейтинги, специальности, гранты, проходные баллы и условия поступления.',
     hero_find_university: 'Найти университет',
+    subtitle: 'Testhub.kz - Это онлайн платформа для абитуриентов, где ты можешь',
+    card_study_rankings: 'Изучить рейтинги и сравнить вузы по всему Казахстану',
+    card_find_specialty: 'Найти подходящую специальность и узнать, кем можно работать',
+    card_take_tests: 'Пройти тесты ЕНТ и профориентации',
+    card_learn_grants: 'Узнать про гранты, проходные баллы и требования к поступлению',
+    card_all_in_one: 'Все в одном месте - без лишнего поиска и стресса',
   },
   KZ: {
     about: 'Платформа туралы',
@@ -49,6 +61,12 @@ export const translations: Translations = {
     hero_subtitle:
       'Қазақстандағы жоғары оқу орындары туралы барлық ақпарат бір жерде: рейтингтер, мамандықтар, гранттар, өту балдары және қабылдау шарттары.',
     hero_find_university: 'Университет табу',
+    subtitle: 'Testhub.kz - Абитуриенттерге арналған онлайн платформа, онда сіз ...',
+    card_study_rankings: 'Қазақстан бойынша университеттердің рейтингтерін зерттеу және салыстыру',
+    card_find_specialty: 'Жарамды мамандықты табу және қайда жұмыс істей аласыңды білу',
+    card_take_tests: 'ЕНТ және кәсіптік бағдар тестерін тапсыру',
+    card_learn_grants: 'Гранттар, өту баллдары және қабылдау талаптары туралы білу',
+    card_all_in_one: 'Барлығы бір жерде - артық іздеу және стресс жоқ',
   },
   EN: {
     about: 'About the Platform',
@@ -64,5 +82,11 @@ export const translations: Translations = {
     hero_subtitle:
       'All information about universities in Kazakhstan in one place: rankings, specialties, grants, passing scores, and admission requirements.',
     hero_find_university: 'Find University',
+    card_study_rankings: 'Study rankings and compare universities across Kazakhstan',
+    card_find_specialty: 'Find a suitable specialty and learn what you can work as',
+    card_take_tests: 'Take ENT and career guidance tests',
+    card_learn_grants: 'Learn about grants, passing scores, and admission requirements',
+    card_all_in_one: 'All in one place - no extra searching or stress',
+    subtitle: 'Testhub.kz - This is an online platform for applicants where you can',
   },
 }
