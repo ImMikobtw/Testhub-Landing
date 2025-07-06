@@ -44,13 +44,13 @@ const UniversityFilter: React.FC<UniversityFilterProps> = ({ onSort, onFilter })
   };
 
   return (
-    <div className="bg-white border border-gray-200 rounded-3xl p-6 mb-6">
+    <div className="bg-white border border-gray-200 w-70 h-160 rounded-3xl p-6 mb-6">
       <h3 className="text-lg font-montserrat font-bold text-gray-900 mb-4">
         {t('filter_title')}
       </h3>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-2">
         <div>
-          <label className="text-sm font-montserrat text-gray-600 mb-2 block">
+          <label className="text-sm font-montserrat text-gray-600 mb-1.5 block">
             {t('sort_by')}
           </label>
           <select
@@ -68,7 +68,7 @@ const UniversityFilter: React.FC<UniversityFilterProps> = ({ onSort, onFilter })
         </div>
 
         <div>
-          <label className="text-sm font-montserrat text-gray-600 mb-2 block">
+          <label className="text-sm font-montserrat text-gray-600 mb-1.5 block">
             {t('region')}
           </label>
           <select
@@ -84,7 +84,7 @@ const UniversityFilter: React.FC<UniversityFilterProps> = ({ onSort, onFilter })
         </div>
 
         <div>
-          <label className="text-sm font-montserrat text-gray-600 mb-2 block">
+          <label className="text-sm font-montserrat text-gray-600 mb-1.5 block">
             {t('ent_subject')}
           </label>
           <select
@@ -102,7 +102,7 @@ const UniversityFilter: React.FC<UniversityFilterProps> = ({ onSort, onFilter })
         </div>
 
         <div>
-          <label className="text-sm font-montserrat text-gray-600 mb-2 block">
+          <label className="text-sm font-montserrat text-gray-600 mb-1.5 block">
             {t('specialty')}
           </label>
           <select
@@ -120,7 +120,7 @@ const UniversityFilter: React.FC<UniversityFilterProps> = ({ onSort, onFilter })
         </div>
 
         <div>
-          <label className="text-sm font-montserrat text-gray-600 mb-2 block">
+          <label className="text-sm font-montserrat text-gray-600 mb-1.5 block">
             {t('study_format')}
           </label>
           <select
@@ -136,7 +136,7 @@ const UniversityFilter: React.FC<UniversityFilterProps> = ({ onSort, onFilter })
         </div>
 
         <div>
-          <label className="text-sm font-montserrat text-gray-600 mb-2 block">
+          <label className="text-sm font-montserrat text-gray-600 mb-1.5 block">
             {t('study_duration')}
           </label>
           <select
@@ -152,7 +152,7 @@ const UniversityFilter: React.FC<UniversityFilterProps> = ({ onSort, onFilter })
         </div>
 
         <div>
-          <label className="text-sm font-montserrat text-gray-600 mb-2 block">
+          <label className="text-sm font-montserrat text-gray-600 mb-1.5 block">
             {t('min_passing_score')}
           </label>
           <input

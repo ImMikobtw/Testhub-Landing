@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react';
 
+import kimep from './assets/kimep.png';
+import kbtu from './assets/kbtu.png';
+import nu from './assets/nu.png';
+
 export interface University {
     logo: string;
     name: string;
@@ -35,9 +39,9 @@ interface UniversityListState {
     setFilter: (params: FilterParams) => void;
 }
 
-const mockUniversities: University[] = [
+export const mockUniversities: University[] = [
   {
-    logo: '/path/to/nu.png',
+    logo: nu,
     name: 'Назарбаев Университет',
     passingScore: 120,
     specialtiesCount: 45,
@@ -50,7 +54,7 @@ const mockUniversities: University[] = [
     studyDuration: '4 года',
   },
   {
-    logo: '/path/to/kbtu.png',
+    logo: kbtu,
     name: 'КБТУ',
     passingScore: 100,
     specialtiesCount: 30,
@@ -63,7 +67,7 @@ const mockUniversities: University[] = [
     studyDuration: '4 года',
   },
   {
-    logo: '/path/to/kimep.png',
+    logo: kimep,
     name: 'КИМЭП',
     passingScore: 110,
     specialtiesCount: 25,
