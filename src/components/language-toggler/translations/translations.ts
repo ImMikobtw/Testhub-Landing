@@ -46,6 +46,7 @@ export interface Translation {
     enter_score: string;
     apply_filters: string;
     no_universities_found: string;
+    find_university: string;
 }
 
 export interface Translations {
@@ -104,6 +105,7 @@ export const translations: Translations = {
         enter_score: 'Введите балл',
         apply_filters: 'Применить фильтры',
         no_universities_found: 'Университеты не найдены',
+        find_university: 'Найди Университет по своим критериям',
     },
     KZ: {
         about: 'Платформа туралы',
@@ -154,6 +156,7 @@ export const translations: Translations = {
         enter_score: 'Балды енгізіңіз',
         apply_filters: 'Сүзгілерді қолдану',
         no_universities_found: 'Университеттер табылмады',
+        find_university: 'Критерийлеріңізге сәйкес университетті табыңыз',
     },
     EN: {
         about: 'About the Platform',
@@ -204,5 +207,6 @@ export const translations: Translations = {
         enter_score: 'Enter Score',
         apply_filters: 'Apply Filters',
         no_universities_found: 'No Universities Found',
+        find_university: 'Find University by your criteria',
     },
 };
