@@ -34,7 +34,7 @@ const PrepareSection: React.FC = () => {
     {
       text: t('card_register'),
       image: fifth,
-      background: 'bg-[#F8F3EC]',
+      background: 'bg-gradient-to-r from-[#B5D8FF] to-[#E4EFFF]',
       button: t('try_tests_free'),
     },
   ];
@@ -42,7 +42,7 @@ const PrepareSection: React.FC = () => {
   return (
     <section className="py-12 md:py-5 bg-[#F5F7FA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col m-12">
+        <div className="flex flex-col mb-12">
           <h2 className="text-2xl md:text-4xl font-montserrat font-bold mb-2 text-left">
             <span className="text-gray-900">{t('prepare_title')}</span>
           </h2>
@@ -51,46 +51,54 @@ const PrepareSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-4 max-w-280 items-center justify-center">
-          <div className="flex flex-row gap-4 text-gray-600 whitespace-nowrap">
+        <div className="flex flex-col gap-4 max-w-7xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {cards.slice(0, 3).map((card, index) => (
               <div
                 key={index}
-                className={`p-4 rounded-3xl ${card.outline ? 'border border-gray-200 border-opacity-30' : ''} ${
+                className={`flex flex-col items-left p-6 rounded-3xl ${card.outline ? 'border border-gray-200 border-opacity-30' : ''} ${
                   card.background || ''
-                } flex flex-col items-left space-x-3`}
+                }`}
               >
-                <img src={card.image} alt={card.text} className="w-24 h-24 object-cover" />
-                <p className="text-lg md:text-lg font-montserrat text-gray-900">
+                <img src={card.image} alt={card.text} className="w-30 h-30 object-cover mb-4" />
+                <p className="text-lg font-montserrat text-gray-600 text-left">
                   {card.text}
                 </p>
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-1 items w-243 md:grid-cols-3 gap-4 justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {cards.slice(3).map((card, index) => (
               <div
                 key={index + 3}
-                className={`flex flex-col p-4 rounded-3xl ${
+                className={`flex flex-col p-6 rounded-3xl ${
                   card.outline ? 'border border-gray-200 border-opacity-30' : ''
-                } ${card.background || ''} flex items-left space-x-3 ${
-                  index === 1 ? 'md:col-span-2' : ''
-                }`}
+                } ${card.background || ''} ${index === 1 ? 'md:col-span-2' : ''}`}
               >
-                <img src={card.image} alt={card.text} className="w-24 h-24 object-cover" />
-                <div className="flex flex-col">
-                  <p className="text-sm md:text-base font-montserrat text-gray-900">
-                    {card.text}
-                  </p>
-                  {card.button && (
-                    <a
-                      href="#tests"
-                      className="bg-[#2374EE] w-62.5 text-white font-montserrat font-medium text-sm px-6 py-2 rounded-2xl hover:bg-[#1b5cbf] transition-colors duration-200 mt-2"
-                    >
-                      {card.button}
-                    </a>
-                  )}
-                </div>
+                {index === 1 ? (
+                  <div className="flex flex-row items-center">
+                    <div className="text-left">
+                      <p className="text-lg font-montserrat text-gray-600 mb-4">
+                        {card.text}
+                      </p>
+                      {card.button && (
+                        <button
+                          className="bg-[#2374EE] border border-blue-500 text-white font-montserrat text-lg font-medium px-6 py-2 rounded-2xl hover:bg-blue-700 hover:text-white transition-colors duration-200 mb-4"
+                        >
+                          {card.button}
+                        </button>
+                      )}
+                    </div>
+                    <img src={card.image} alt={card.text} className="w-40 h-40 object-cover" />
+                  </div>
+                ) : (
+                  <div className="flex flex-col items-left">
+                    <img src={card.image} alt={card.text} className="w-30 h-30 object-cover mb-4" />
+                    <p className="text-lg font-montserrat text-gray-600 text-left">
+                      {card.text}
+                    </p>
+                  </div>
+                )}
               </div>
             ))}
           </div>
