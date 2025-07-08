@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
   const { t } = useLanguage();
 
   const logos = [
-    { src: nu, alt: 'NU', position: 'top-10 left-8', animation: 'animate-bounce' },
+    { src: nu, alt: 'NU', position: 'top-10 left-4', animation: 'animate-bounce' },
     { src: kbtu, alt: 'KBTU', position: 'top-6 right-5', animation: 'animate-bounce' },
     { src: kazuu, alt: 'KAZUU', position: 'bottom-10 left-8', animation: 'animate-bounce 5s' },
     { src: kimep, alt: 'KIMEP', position: 'bottom-12 right-8', animation: 'animate-bounce' },

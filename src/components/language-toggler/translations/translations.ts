@@ -47,6 +47,14 @@ export interface Translation {
     apply_filters: string;
     no_universities_found: string;
     find_university: string;
+    card_tests_ent: string;
+    card_trial_tests: string;
+    card_error_analysis: string;
+    card_career_test: string;
+    card_register: string;
+    try_tests_free: string;
+    prepare_title: string;
+    prepare_subtitle: string;
 }
 
 export interface Translations {
@@ -58,7 +66,7 @@ export interface Translations {
 export const translations: Translations = {
     RU: {
         about: 'О платформе',
-        universities: 'Поиск университетов',
+        universities: 'Поиск Университетов',
         tests: 'Тесты ЕНТ',
         media: 'Testhub медиа',
         salaries: 'Зарплаты специалистов',
@@ -106,6 +114,14 @@ export const translations: Translations = {
         apply_filters: 'Применить фильтры',
         no_universities_found: 'Университеты не найдены',
         find_university: 'Найди Университет по своим критериям',
+        card_tests_ent: 'Тесты ЕНТ по всем предметам',
+        card_trial_tests: 'Пробные вступительные тесты вузов',
+        card_error_analysis: 'Анализ ошибок и рекомендации',
+        card_career_test: 'Профориентационный тест — подскажет, куда поступать',
+        card_register: 'Зарегестрируйся — получи доступ к бесплатным тестам и начни готовиться уже сегодня!',
+        try_tests_free: 'Попробовать тесты бесплатно',
+        prepare_title: 'Готовься к постулпению у  нас',
+        prepare_subtitle: 'Проходи тесты ЕНТ и внутренние экзамены — в удобном формате и с мгновенной проверкой.',
     },
     KZ: {
         about: 'Платформа туралы',
@@ -157,6 +173,14 @@ export const translations: Translations = {
         apply_filters: 'Сүзгілерді қолдану',
         no_universities_found: 'Университеттер табылмады',
         find_university: 'Критерийлеріңізге сәйкес университетті табыңыз',
+        card_tests_ent: 'Тесты ЕНТ по всем предметам',
+        card_trial_tests: 'Пробные вступительные тесты вузов',
+        card_error_analysis: 'Анализ ошибок и рекомендации',
+        card_career_test: 'Профориентационный тест — подскажет, куда поступать',
+        card_register: 'Зарегистрируйся — получи доступ к бесплатным тестам и начни готовиться уже сегодня!',
+        try_tests_free: 'Попробовать тесты бесплатно',
+        prepare_title: 'Готовься к постулпению у  нас',
+        prepare_subtitle: 'Проходи тесты ЕНТ и внутренние экзамены — в удобном формате и с мгновенной проверкой.',
     },
     EN: {
         about: 'About the Platform',
@@ -208,5 +232,13 @@ export const translations: Translations = {
         apply_filters: 'Apply Filters',
         no_universities_found: 'No Universities Found',
         find_university: 'Find University by your criteria',
+        card_tests_ent: 'UNT tests in all subjects',
+        card_trial_tests: 'Mock entrance tests of universities',
+        card_error_analysis: 'Error analysis and recommendations',
+        card_career_test: 'Career guidance test — will tell you where to apply',
+        card_register: 'Register - get access to free tests and start preparing today!',
+        try_tests_free: 'Try tests for free',
+        prepare_title: 'Prepare for admission with us',
+        prepare_subtitle: 'Take UNT tests and internal exams - in a convenient format and with instant verification.',
     },
 };

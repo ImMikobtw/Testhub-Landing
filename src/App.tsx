@@ -4,6 +4,8 @@ import HeroSection from './components/hero-section/HeroSection';
 import WhatIsTesthubSection from './components/desc-section/WhatIsTesthubSection';
 import UniversityFilter from './components/filter-section/filter/UniversityFilter';
 import UniversitySection from './components/filter-section/UniversitySection';
+import PrepareSection from './components/prepare-section/PrepareSection';
+
 import { useUniversityList } from './components/filter-section/university-card/useUniversityList';
 import { useLanguage } from './components/language-toggler/context/LanguageContext'
 
@@ -22,13 +24,14 @@ const App = ({find_universities}: AppProps) => {
       <main className="flex-grow">
         <HeroSection />
         <WhatIsTesthubSection />
-        <section className="flex flex-col gap-10 bg-[#F5F7FA] justify-center my-10 py-20">
+        <section className="flex flex-col bg-[#F5F7FA] gap-10 justify-center my-10 py-20">
           <h1 className="flex font-montserrat text-5xl font-bold justify-center py-5">{t('find_university')}</h1>
           <div className="flex flex-row gap-10 justify-center">
                <UniversityFilter onSort={setSort} onFilter={setFilter} />
                <UniversitySection universities={filteredUniversities} />
           </div>
         </section>
+        <PrepareSection />
       </main>
       <Footer />
     </div>
