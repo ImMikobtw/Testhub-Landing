@@ -5,6 +5,7 @@ import WhatIsTesthubSection from './components/desc-section/WhatIsTesthubSection
 import UniversityFilter from './components/filter-section/filter/UniversityFilter';
 import UniversitySection from './components/filter-section/UniversitySection';
 import PrepareSection from './components/prepare-section/PrepareSection';
+import SpecialistsSalariesSection from './components/specialists-section/SpecialistsSalariesSection';
 
 import { useUniversityList } from './components/filter-section/university-card/useUniversityList';
 import { useLanguage } from './components/language-toggler/context/LanguageContext'
@@ -32,6 +33,7 @@ const App = ({find_universities}: AppProps) => {
           </div>
         </section>
         <PrepareSection />
+        <SpecialistsSalariesSection />
       </main>
       <Footer />
     </div>

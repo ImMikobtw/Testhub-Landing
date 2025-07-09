@@ -55,6 +55,10 @@ export interface Translation {
     try_tests_free: string;
     prepare_title: string;
     prepare_subtitle: string;
+    salaries_title: string;
+    profession: string;
+    median_salary: string;
+    vacancy_universities: string;
 }
 
 export interface Translations {
@@ -122,6 +126,10 @@ export const translations: Translations = {
         try_tests_free: 'Попробовать тесты бесплатно',
         prepare_title: 'Готовься к поступлению у  нас',
         prepare_subtitle: 'Проходи тесты ЕНТ и внутренние экзамены — в удобном формате и с мгновенной проверкой.',
+        salaries_title: 'Зарплаты специалистов',
+        profession: 'Профессия',
+        median_salary: 'Медианная зарплата',
+        vacancy_universities: 'Университеты',
     },
     KZ: {
         about: 'Платформа туралы',
@@ -173,14 +181,18 @@ export const translations: Translations = {
         apply_filters: 'Сүзгілерді қолдану',
         no_universities_found: 'Университеттер табылмады',
         find_university: 'Критерийлеріңізге сәйкес университетті табыңыз',
-        card_tests_ent: 'Тесты ЕНТ по всем предметам',
-        card_trial_tests: 'Пробные вступительные тесты вузов',
-        card_error_analysis: 'Анализ ошибок и рекомендации',
-        card_career_test: 'Профориентационный тест — подскажет, куда поступать',
-        card_register: 'Зарегистрируйся — получи доступ к бесплатным тестам и начни готовиться уже сегодня!',
-        try_tests_free: 'Попробовать тесты бесплатно',
-        prepare_title: 'Готовься к постулпению у  нас',
-        prepare_subtitle: 'Проходи тесты ЕНТ и внутренние экзамены — в удобном формате и с мгновенной проверкой.',
+        card_tests_ent: 'ҰБТ тесттері',
+        card_trial_tests: 'Университеттердің сынақ тесттері',
+        card_error_analysis: 'Қателерді талдау және ұсыныстар',
+        card_career_test: 'Кәсіптік бағдар беру тесті — қайда түсу керектігін айтады',
+        card_register: 'Тіркел — тегін тесттерге қол жеткіз және дайындықты бүгіннен баста!',
+        try_tests_free: 'Тесттерді тегін көріңіз',
+        prepare_title: 'Бізбен бірге қабылдауға дайындал',
+        prepare_subtitle: 'ҰБТ және ішкі емтихандарды ыңғайлы форматта және лезде тексерумен тапсыр.',
+        salaries_title: 'Мамандардың жалақысы',
+        profession: 'Мамандық',
+        median_salary: 'Орташа жалақы',
+        vacancy_universities: 'Университеттер',
     },
     EN: {
         about: 'About the Platform',
@@ -240,5 +252,9 @@ export const translations: Translations = {
         try_tests_free: 'Try tests for free',
         prepare_title: 'Prepare for admission with us',
         prepare_subtitle: 'Take UNT tests and internal exams - in a convenient format and with instant verification.',
+        salaries_title: 'Specialists’ Salaries',
+        profession: 'Profession',
+        median_salary: 'Median Salary',
+        vacancy_universities: 'Universities',
     },
 };
