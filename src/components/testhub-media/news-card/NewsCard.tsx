@@ -1,5 +1,4 @@
 import React from 'react';
-import { useLanguage } from '../../language-toggler/context/LanguageContext';
 import type { News } from '../TesthubMediaSection';
 
 interface NewsCardProps {
@@ -7,7 +6,6 @@ interface NewsCardProps {
 }
 
 const NewsCard: React.FC<NewsCardProps> = ({ news }) => {
-    const { t } = useLanguage();
     return (
         <div className="bg-white border border-gray-200 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 w-full">
             <div className="flex flex-col gap-4">
