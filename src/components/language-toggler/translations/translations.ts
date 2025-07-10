@@ -59,6 +59,8 @@ export interface Translation {
     profession: string;
     median_salary: string;
     vacancy_universities: string;
+    media_title: string;
+    news_date: string;
 }
 
 export interface Translations {
@@ -130,6 +132,8 @@ export const translations: Translations = {
         profession: 'Профессия',
         median_salary: 'Медианная зарплата',
         vacancy_universities: 'Университеты',
+        media_title: 'Testhub медиа',
+        news_date: '{date}',
     },
     KZ: {
         about: 'Платформа туралы',
@@ -193,6 +197,8 @@ export const translations: Translations = {
         profession: 'Мамандық',
         median_salary: 'Орташа жалақы',
         vacancy_universities: 'Университеттер',
+        media_title: 'Testhub медиа',
+        news_date: '{date}',
     },
     EN: {
         about: 'About the Platform',
@@ -256,5 +262,7 @@ export const translations: Translations = {
         profession: 'Profession',
         median_salary: 'Median Salary',
         vacancy_universities: 'Universities',
+        media_title: 'Testhub Media',
+        news_date: '{date}',
     },
 };
